@@ -1,0 +1,410 @@
+:root {
+	--color: #189bd5;
+}
+
+*, html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	background-image: linear-gradient(to bottom right, rgb(0 0 0 / 31%), var(--color)), url(4133494.jpg);
+	background-size: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	width: 100%;
+	height: 15vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+nav img {
+	position: absolute;
+	top: 0;
+	width: 11%;
+	padding: 15px;
+	border-radius: 0 0 12px 12px;
+	background-color: #fff;
+	box-shadow: 3px 0px 8px 4px rgba(0, 0, 0, .3);
+}
+
+header {
+	width: 100%;
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.content {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	color: white;
+	text-shadow: 4px 4px #03527385;
+	margin: 0;
+    padding: 0 15px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.buttonContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonP {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1.5px solid var(--color);    
+    border-radius: 20px 0 0 20px;
+}
+.buttonV {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1.5px solid var(--color); 
+    border-radius: 0 20px 20px 0;
+}
+
+.buttonP, .buttonP:visited,
+.buttonV, .buttonV:visited {
+    background: white;
+    color: var(--color);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 7px 15px;
+    margin: 13px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+
+    transition: .3s all ease;
+}
+
+.buttonP:hover, .buttonP:active, .buttonP:focus,
+.buttonV:hover, .buttonV:active, .buttonV:focus {
+    color: white;
+    background: var(--color);
+	box-shadow: 0px 0px 11px 2px rgb(255 255 255 / 35%);
+}
+
+#ocultoP {
+    height: auto;
+	position: absolute;
+	top: 0;
+	left: -150%;
+}
+
+#ocultoV {
+    height: 100%;
+	position: absolute;
+	top: 0;
+	left: -150%;
+}
+
+.carreras {
+	width: 100%;
+    background: #000000e0;
+    padding: 0 0 25px 0;
+	display: flex;
+	flex-direction: column;
+
+	transition: .3s all ease;
+}
+
+.fila {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.carrera, .carrera:visited {
+	position: relative;
+	width: calc(100% / 5);
+	background: blue;
+	height: 209px;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+    background-size: cover;
+
+    transition: .3s all ease;
+}
+
+.carrera:hover, .carrera:focus, .carrera:active {
+	box-shadow: 3px 4px 15px 1px rgb(16 107 146 / 57%);
+}
+
+.carrera span {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 0 10px 0 10px;
+    padding: 2px 10px;
+    color: var(--color);
+}
+
+.carreraV, .carreraV:visited {
+	position: relative;
+	width: calc(100% / 5);
+	height: 209px;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/contador.jpg);
+    background-size: cover;
+
+    transition: .3s all ease;
+}
+
+.carreraV:hover, .carreraV:focus, .carreraV:active {
+	box-shadow: 3px 4px 15px 1px rgb(146 77 16 / 57%);
+}
+
+.carreraV span {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 0 10px 0 10px;
+    padding: 2px 10px;
+    color: #ff8b00;
+}
+
+.veterinaria {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/veterinaria.jpg);
+}
+.contador {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/contador.jpg);
+}
+.contadorV {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/contador.jpg);
+}
+.administracion {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/administracion.jpg);
+}
+.administracionV {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/administracion.jpg);
+}
+.farmacia {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/farmacia.jpg);
+}
+.agronomia {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/agronomia.jpg);
+}
+.ambiente {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/ambiente.jpg);
+}
+.ambienteV {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/ambiente.jpg);
+}
+.fisica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/fisica.jpg);
+}
+.industrial {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/industrial.jpg);
+}
+.matematica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/matematica.jpg);
+}
+.medicina {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/medicina.jpg);
+}
+.nutricion {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/nutricion.jpg);
+}
+.optica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/optica.jpg);
+}
+.quimica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/quimica.jpg);
+}
+.sistemas {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/sistemas.jpg);
+}
+.zootecnista {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/zootecnista.jpg);
+}
+.alimento {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/alimento.jpg);
+}
+.penitenciario {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/penitenciario.jpg);
+}
+
+.historia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/historia.jpg);
+}
+.teologia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/teologia.jpg);
+}
+.abogacia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/abogacia.jpg);
+}
+.sociologia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/sociologia.jpg);
+}
+.seguridad {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/seguridad.jpg);
+}
+.higiene {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/higiene.jpg);
+}
+
+.nombre-carrer {
+	text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.cerrarContent {
+	position: relative;
+    width: 100%;
+    padding: 0px 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrarContent i, .cerrarContent i:visited {
+    padding: 0 20px 0 0;
+    font-size: 2rem;
+    color: #0696d6;
+    width: calc(100% / 3);
+    text-align: right;
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    cursor: pointer;
+}
+
+.closeV {
+    color: #ff8b00 !important;
+}
+
+.cerrarContent i:hover, .cerrarContent i:active, .cerrarContent i:focus,
+.closeV:hover, .closeV:active, .closeV:focus {
+	color: white !important;
+}
+
+.cerrarContent__tituloP, .cerrarContent__tituloV {
+	width: auto;
+    text-align: center;
+    padding: 7px 23px 12px 32px;
+    background: white;
+    border-radius: 0 0 25px 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 3px 0px 8px 4px rgb(0 0 0 / 62%);
+}
+
+.cerrarContent__tituloP {
+    color: var(--color);
+}
+.cerrarContent__tituloV {
+    color: #ff8b00;
+}
+
+@media only screen and (max-width: 900px) {
+	.carrera, .carreraV {
+		width: calc(100% / 3);
+	}
+	nav img {
+		width: 15%;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+    .buttonContent {
+        flex-direction: column;
+    }
+    
+    .buttonP {
+        margin: 30px 0 0 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-radius: 5px;
+    }
+    .buttonV {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+	header h1 {
+		line-height: 1;
+		font-size: 2.8rem;
+	}
+
+	header button, header button:visited {
+	    font-size: 1rem;
+	}
+	.carreras {
+		height: auto;
+	}
+	.carrera, .carreraV {
+		width: 100%;
+	}
+	nav img {
+		width: 25%;
+	}
+    .cerrarContent {
+        padding: 0 0 15px 0;
+        flex-direction: column;
+    }
+    .cerrarContent i {
+        position: inherit;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
+
+    .closeV {
+        margin: -15px 0px 48px !important;
+    }
+
+}
