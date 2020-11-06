@@ -32,11 +32,34 @@ nav {
 nav img {
 	position: absolute;
 	top: 0;
-	width: 11%;
+	width: 12%;
 	padding: 15px;
 	border-radius: 0 0 12px 12px;
 	background-color: #fff;
 	box-shadow: 3px 0px 8px 4px rgba(0, 0, 0, .3);
+}
+
+footer {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+footer img {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    transform: translateX(0%);
+    margin-bottom: 24px;
+    width: 9%;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 2px 2px 8px 4px rgb(7 115 162 / 53%);
 }
 
 header {
@@ -127,11 +150,10 @@ header h1 {
 
 .carreras {
 	width: 100%;
-    background: #000000e0;
+    background-image: linear-gradient(to bottom right, rgb(0 0 0 / 57%), #000000), url(expoFondo.jpg);
     padding: 0 0 25px 0;
 	display: flex;
 	flex-direction: column;
-
 	transition: .3s all ease;
 }
 
@@ -349,7 +371,12 @@ header h1 {
 	}
 	nav img {
 		width: 15%;
-	}
+    }
+    footer img {
+        width: 12%;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -358,7 +385,7 @@ header h1 {
     }
     
     .buttonP {
-        margin: 30px 0 0 0;
+        margin: 30px 10px 0 10px;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         border-right: 1px solid white;
@@ -391,7 +418,10 @@ header h1 {
 	}
 	nav img {
 		width: 25%;
-	}
+    }
+    footer img {
+        width: 20%;
+    }
     .cerrarContent {
         padding: 0 0 15px 0;
         flex-direction: column;
