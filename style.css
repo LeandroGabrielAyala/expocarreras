@@ -97,7 +97,7 @@ header {
 
 header h1 {
 	color: white;
-	text-shadow: 4px 4px #0ec18e38;
+	text-shadow: 2px 2px #0ec18e70;
 	margin: 0;
     padding: 0 15px;
     font-weight: 600;
@@ -200,6 +200,7 @@ header h1 {
 }
 
 .carrera span {
+    display: none;
 	position: absolute;
     left: 0;
     bottom: 0;
@@ -220,7 +221,7 @@ header h1 {
     align-items: center;
     padding: 0px 20px;
     cursor: pointer;
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/contador.jpg);
+    background-image: url(carreras/contador.jpg);
     background-size: cover;
 
     transition: .3s all ease;
@@ -231,6 +232,7 @@ header h1 {
 }
 
 .carreraV span {
+    display: none;
 	position: absolute;
     left: 0;
     bottom: 0;
@@ -240,87 +242,94 @@ header h1 {
     color: #ff8b00;
 }
 
-.veterinaria {
+/*.veterinaria {
     background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/veterinaria.jpg);
-}
-.contador {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/contador.jpg);
 }
 .contadorV {
     background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/contador.jpg);
+}*/
+.veterinaria {
+    background-image: url(carreras/veterinaria.jpg);
+}
+.contador {
+    background-image: url(carreras/contadorP.jpg);
+}
+.contadorV {
+    background-image: url(carreras/contadorV.jpg);
 }
 .administracion {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/administracion.jpg);
+    background-image: url(carreras/administracionP.jpg);
 }
 .administracionV {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/administracion.jpg);
+    background-image: url(carreras/administracionV.jpg);
 }
 .farmacia {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/farmacia.jpg);
+    background-image: url(carreras/farmacia.jpg);
 }
 .agronomia {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/agronomia.jpg);
+    background-image: url(carreras/agronomia.jpg);
 }
 .ambiente {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/ambiente.jpg);
+    background-image: url(carreras/ambienteP.jpg);
 }
 .ambienteV {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/ambiente.jpg);
+    background-image: url(carreras/ambienteV.jpg);
 }
 .fisica {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/fisica.jpg);
+    background-image: url(carreras/fisica.jpg);
 }
 .industrial {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/industrial.jpg);
+    background-image: url(carreras/industrial.jpg);
 }
 .matematica {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/matematica.jpg);
+    background-image: url(carreras/matematica.jpg);
 }
 .medicina {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/medicina.jpg);
+    background-image: url(carreras/medicina.jpg);
 }
 .nutricion {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/nutricion.jpg);
+    background-image: url(carreras/nutricion.jpg);
 }
 .optica {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/optica.jpg);
+    background-image: url(carreras/optica.jpg);
 }
 .quimica {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/quimica.jpg);
+    background-image: url(carreras/quimica.jpg);
 }
 .sistemas {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/sistemas.jpg);
+    background-image: url(carreras/sistemas.jpg);
 }
 .zootecnista {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/zootecnista.jpg);
+    background-image: url(carreras/zootecnista.jpg);
 }
 .alimento {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/alimento.jpg);
+    background-image: url(carreras/alimento.jpg);
 }
 .penitenciario {
-    background-image: linear-gradient(to bottom right, #0ec18e75, #0ec18e), url(carreras/penitenciario.jpg);
+    background-image: url(carreras/penitenciario.jpg);
 }
 
 .historia {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/historia.jpg);
+    background-image: url(carreras/historia.jpg);
 }
 .teologia {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/teologia.jpg);
+    background-image: url(carreras/teologia.jpg);
 }
 .abogacia {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/abogacia.jpg);
+    background-image: url(carreras/abogacia.jpg);
 }
 .sociologia {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/sociologia.jpg);
+    background-image: url(carreras/sociologia.jpg);
 }
 .seguridad {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/seguridad.jpg);
+    background-image: url(carreras/seguridad.jpg);
 }
 .higiene {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/higiene.jpg);
+    background-image: url(carreras/higiene.jpg);
 }
 
-.nombre-carrer {
+.nombre-carrera {
+    display: none;
 	text-transform: uppercase;
     color: white;
     font-weight: 600;
